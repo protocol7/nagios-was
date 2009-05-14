@@ -1,4 +1,4 @@
-JVM heapsize is provided for the entire server. It is measures as:
+JVM heapsize is provided for the entire server. It is measured as:
 percent used/maximum configured
 
 To monitor, use the following plugin invocation:
