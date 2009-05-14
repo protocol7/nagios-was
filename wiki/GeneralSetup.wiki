@@ -1,0 +1,18 @@
+#summary Generic configuration of the plugin
+
+This page described the initial configuration of the plugin. You will probably need to go through this list before getting the plugin running the first time.
+
+  # Place check_was, check_was-<version>.jar and check_was.profiles in the same directory (e.g. /opt/plugins/custom). This can be on any computer with TCP access to the server running WAS, or on the WAS server itself.
+  # Make sure check_was is executable by your Nagios user.
+  # Update check_was by setting the environment variables at the start of the script to the appropriate values for your server. JAVA_HOME must point to an IBM JRE/JDK. WAS_HOME needs to point to a directory that contains a directory named "runtimes" containing the following WAS libraries: com.ibm.ws.admin.client_<version>.jar and com.ibm.ws.webservices.thinclient_<version>.jar. If you run the plugin on the same server as WAS, WAS_HOME should point to the WAS install directory.
+  # Edit check_was.servers. This file should contain the configuration to connect to your WAS server. For each server, the following properties should be provided:
+  #* <server alias>.hostname=<the hostname or IP of the WAS server>
+  #* <server alias>.port=<the port of the SOAP connector on the server, e.g. 8880>
+  #* <server alias>.username=<the admin user name>
+  #* <server alias>.password=<the admin password>
+  #* <server alias>.securityenabled=<true if security is enabled, false otherwise>
+  #* <server alias>.truststore=<the path to the keystore containing the certificated to be used for SSL. If you are running the plugin on your WAS server and use the default WAS keystores, this should point to etc/DummyClientTrustFile.jks in your profile>
+  #* <server alias>.truststorepassword=<the password for the trust store>
+  #* <server alias>.keystore=<the path to the keystore containing the private key to be used for SSL. If you are running the plugin on your WAS server and use the default WAS keystores, this should point to etc/DummyClientKeyFile.jks in your profile>
+  #* <server alias>.keystorepassword=<the password for the key store>
+  # You're done.
