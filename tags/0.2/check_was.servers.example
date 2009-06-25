@@ -1,0 +1,9 @@
+example.hostname=127.0.0.1
+example.port=8880
+example.username=admin
+example.password=secret
+example.securityenabled=true
+example.truststore=/opt/was/profiles/example/etc/DummyClientTrustFile.jks
+example.keystore=/opt/was/profiles/example/etc/DummyClientKeyFile.jks
+example.truststorepassword=secret
+example.keystorepassword=secret
