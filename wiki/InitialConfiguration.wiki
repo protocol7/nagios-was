@@ -11,8 +11,8 @@ This page described the initial configuration of the plugin. You will probably n
   #* <server alias>.username=<the admin user name>
   #* <server alias>.password=<the admin password>
   #* <server alias>.securityenabled=<true if security is enabled, false otherwise>
-  #* <server alias>.truststore=<the path to the keystore containing the certificated to be used for SSL. If you are running the plugin on your WAS server and use the default WAS keystores, this should point to {{{etc/DummyClientTrustFile.jks}}} in your profile>
+  #* <server alias>.truststore=<the path to the keystore containing the certificated to be used for SSL. If you are running the plugin on your WAS server and use the default WAS keystores, this should point to {{{etc/trust.p12}}} in your profile>
   #* <server alias>.truststorepassword=<the password for the trust store>
-  #* <server alias>.keystore=<the path to the keystore containing the private key to be used for SSL. If you are running the plugin on your WAS server and use the default WAS keystores, this should point to {{{etc/DummyClientKeyFile.jks}}} in your profile>
+  #* <server alias>.keystore=<the path to the keystore containing the private key to be used for SSL. If you are running the plugin on your WAS server and use the default WAS keystores, this should point to {{{etc/key.p12}}} in your profile>
   #* <server alias>.keystorepassword=<the password for the key store>
   # You're done.
